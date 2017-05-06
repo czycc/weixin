@@ -185,19 +185,19 @@ select option {
 
 }
 
-.page2 .container p {
-    /*text-align: center;*/
-    font-size: 20px;
+.page2 .container p{
+    text-align: center;
+    font-size: 28px;
     color: #565656;
-    margin-left: 44%;
+    margin-left: 30%;
     /*font-weight: bold;*/
 }
-
-.page2 .container .return {
+.page2 .container .return{
     width: 76%;
     margin-top: 5px;
     text-align: center;
-    margin-left: 24%;
+    /*margin-left: 24%;*/
+    float: right;
 
 }
 
