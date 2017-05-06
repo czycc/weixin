@@ -14,25 +14,25 @@
 
 				<div class="left">
 					<div class="hea">
-						<img src="{{asset('img2/submitBg_03.png')" alt="">
+						<img src="{{asset('img2/submitBg_03.png')}}" alt="">
 					</div>
 					<div class="container">
 						<p class="count"><span>30</span>s后自动返回</p>
 						<div class="return">
-							<img src="{{asset('img2/returnBtm.png')"/>
+							<img src="{{asset('img2/returnBtm.png')}}"/>
 						</div>
 					</div>
 				</div>
 				<div class="right">
 					<div class="erweima">
-						<img src="{{asset('img2/erweima.png')" alt="">
+						<img src="{{asset('img2/erweima.png')}}" alt="">
 					</div>
 				</div>
 				
 			</div>
 
 			<div class="footer">
-				<img src="{{asset('img2/footer.jpg')" alt="">
+				<img src="{{asset('img2/footer.jpg')}}" alt="">
 			</div>
 
 		</div>
