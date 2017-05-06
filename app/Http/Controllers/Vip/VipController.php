@@ -17,6 +17,13 @@ class VipController extends Controller
     {
 
         $result = Vip::create($request->all());
-        return view('submitSuess',compact('result'));
+        return view('submitSuess', compact('result'));
+    }
+
+    public function mobile(Request $request)
+    {
+
+        $result = Vip::create($request->all());
+        return view('mobile', compact('result'));
     }
 }

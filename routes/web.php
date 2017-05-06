@@ -21,6 +21,10 @@ Route::get('/test', function () {
  */
 Route::get('/vip','Vip\\VipController@index');
 Route::post('/vip/create','Vip\\VipController@create');
+Route::get('/vip/mobile', function (){
+    return view('mobile');
+});
+Route::post('/vip/mobile/create', 'Vip\\VipController@mobile');
 
 /**
  * 惠氏答题活动
