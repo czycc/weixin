@@ -24,6 +24,6 @@ class VipController extends Controller
     {
 
         $result = Vip::create($request->all());
-        return view('mobile', compact('result'));
+        return view('redirect', compact('result'));
     }
 }
