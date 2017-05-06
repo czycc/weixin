@@ -8,7 +8,7 @@
 	<body>
 		<div class="all page1">
 			<div class="header">
-				<img src="{{asset('img2/header.jpg')"/>
+				<img src="{{asset('img2/header.jpg') }}"/>
 			</div>
 			<div class="con">
 				<form action="{{url('/vip/create')}}" method="post">
@@ -105,11 +105,11 @@
 					</div>
 				</form>
 				<div class="erweima">
-					<img src="{{asset('img2/erweima.png')" alt="">
+					<img src="{{asset('img2/erweima.png') }}" alt="">
 				</div>
 			</div>
 			<div class="footer">
-				<img src="{{asset('img2/footer.jpg')" alt="">
+				<img src="{{asset('img2/footer.jpg')}}" alt="">
 			</div>
 			<!--<div class="popup">
 				<div class="content">
