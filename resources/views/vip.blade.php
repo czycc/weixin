@@ -41,7 +41,7 @@
 							<p class="arrow"></p>
 							<span>选择省份</span>
 							<!--<p class="arrow"></p>-->
-							<ul name="province" id="province">
+							<ul >
 								
 								<li value="">北京市</li>
 								<li value="">上海市</li>
@@ -79,12 +79,12 @@
 						</div>
 					</div>
 					<div class="select ">
-						<input type="text" name="province" id="province"/>
+						<input type="text" name="trade" id="trade"/>
 						<span>所属行业:</span>
 						<div value="">
 							<p class="arrow"></p>
 							<span>所属行业</span>
-							<ul name="trade" id="province">
+							<ul>
 								<!--<li value="">选择行业</li>-->
 								<li value="">企业</li>
 								<li value="">公安</li>
@@ -96,12 +96,12 @@
 						</div>
 					</div>
 					<div class="select ">
-						<input type="text" name="province" id="province"/>
+						<input type="text" name="identity" id="identity"/>
 						<span>所属身份:</span>
 						<div value="">
 							<p class="arrow"></p>
 							<span>所属身份</span>
-							<ul name="trade" id="province">
+							<ul >
 								<li value="">ISV</li>
 								<li value="">集成商</li>
 								<li value="">渠道商</li>
