@@ -83,7 +83,7 @@
 						<span>所属行业:</span>
 						<div value="">
 							<p class="arrow"></p>
-							<span>所属行业</span>
+							<span>选择行业</span>
 							<ul>
 								<!--<li value="">选择行业</li>-->
 								<li value="">企业</li>
@@ -100,7 +100,7 @@
 						<span>所属身份:</span>
 						<div value="">
 							<p class="arrow"></p>
-							<span>所属身份</span>
+							<span>选择身份</span>
 							<ul >
 								<li value="">ISV</li>
 								<li value="">集成商</li>
@@ -200,8 +200,15 @@
 	<script src="{{asset('js2/jquery-1.10.2.js')}}" type="text/javascript" charset="utf-8"></script>
 	<script src="{{asset('js2/index.js')}}" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript">
-		$('.select div span').click(function(){
-			$(this).next('ul').css('display','block')
+		$('.select').find('div span').click(function(){
+			
+				
+			$(this).next('ul').toggle();
+			
+			$(this).parents('.select').siblings().find('ul').hide();
+			
+
+			
 		})
 		$('li').click(function(){
 			$(this).css('background-color','darkgrey').siblings().css('background-color','white');
