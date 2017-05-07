@@ -1,11 +1,13 @@
 html{
 	width: 100%;
 	height: 100%;
+	position: relative;
 	
 }
 body{
 	width: 100%;
 	height: 100%;
+	position: relative;
 }
 img{
 	display: block;
@@ -14,18 +16,85 @@ img{
 .page{
 	width: 100%;
 	height: 100%;
-	background: url(../img/bg.png) no-repeat center center;
-	-webkit-background-size: 100% 100%;
-	background-size: 100% 100%;;
-}
+	/*position: relative;*/
 
+}
+.page .content{
+	width: 100%;
+	height: 100%;
+	/*background: url(../img/bg.png) no-repeat center center;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%*/
+}
+.page .content .bg{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -10;
+}
+.page .content .bg img{
+	width: 100%;
+	height: 100%;
+}
+.page .content .logo{
+	width: 24%;
+	position: absolute;
+	top: 4%;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+.page .yinyue{
+	position: absolute;
+	width: 16%;
+	/*height: 10%;*/
+	right: 3%;
+	animation: yinyue 2s linear infinite;
+}
+@-moz-keyframes yinyue{
+	from{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
+@-ms-keyframes yinyue{
+	from{
+		transform: rotate(0deg);
+		
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
+@-webkit-keyframes yinyue{
+	from{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
+@keyframes yinyue{
+	from{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
 form{
 	width: 84%;
 	position: absolute;
 	left: 0;
 	right: 0;
 	margin: auto;
-	top: 16%;
+	top: 18%;
 }
 form div{
 	width: 100%;
@@ -49,7 +118,8 @@ form div input,form div select{
 	line-height: 8vw;
 	/*color: white;*/
 	background-color:#c0daf1;
-	color: grey;
+	color: white;
+	font-size: 4vw;
 	
 }
 form div input{
@@ -64,14 +134,17 @@ form div select{
 	appearance:none;
 	-moz-appearance:none;
 	-webkit-appearance:none;
-	color: #778197;
+	/*color: #778197;*/
 	font-size: 4vw;
 	font-weight: bold;
+}
+input select{
+	color: white;
 }
 .submit{
 	position: relative;
 	width: 36%;
-	margin: 5% auto;
+	margin: 10% auto;
 }
 .submit .label{
 	width: 70%;

@@ -17,6 +17,18 @@
 	<body>
 		<div class="page">
 			<div class="content">
+				<div class="bg">
+					<img src="{{asset('img/bg.png')}}" />
+				</div>
+				<div class="logo">
+					<img src="{{asset('img/logo.png')}}" alt="" />
+				</div>
+				<audio id="audio" class="audio" autoplay="autoplay" preload loop="loop">
+					<source src="{{asset('X-Ray Dog - Flight Of Dreams.mp3')}}"></source>
+				</audio>
+				<div class="yinyue">
+					<img id="music" src="{{asset('img/yinyue.png')}}" />
+				</div>
 				<form action="{{url('vip/mobile/create')}}" method="post">
 					{{ csrf_field() }}
 
@@ -123,10 +135,81 @@
 
 	<script src="{{asset('js/zepto.min.js')}}" type="text/javascript" charset="utf-8"></script>
 	<script src="{{asset('js/touch.js')}}" type="text/javascript" charset="utf-8"></script>
-	<script>
-		var height = $(window).height();
-//		console.log(height);
-		$('.page').css('height',height);
+	<script type="text/javascript">
+		var conHeight = $(window).height(); //获取手机设备的高度
+
+		console.log(conHeight);
+		
+		$('.page .content').height(conHeight);
+		
+		$('.page .content .bg').height(conHeight);
+
+		console.log($('.page .content').height());
+
+		var audio = document.getElementById('audio');
+
+		var music = document.getElementById('music');
+		
+
+		function audioAutoPlay(id) {
+			var audio = document.getElementById(id),
+				play = function() {
+					audio.play();
+					document.removeEventListener("touchstart", play, false);
+				};
+			audio.play();
+			document.addEventListener("WeixinJSBridgeReady", function() {
+				play();
+			}, false);
+			document.addEventListener('YixinJSBridgeReady', function() {
+				play();
+			}, false);
+			document.addEventListener("touchstart", play, false);
+		}
+		audioAutoPlay('audio');
+
+		window.onload = function() {
+			audio.play();
+			//			alert('ok')
+		}
+		music.addEventListener('touchstart', function() {
+
+			//			console.log(123);
+
+			if(audio.paused) {
+
+				audio.play();
+
+			} else {
+
+				audio.pause();
+
+			}
+		})
+
+		//		console.log(audio)
+		$('.yuinyue img').on('tap', function() {
+
+			console.log(123);
+
+			if(audio.paused) {
+				audio.play()
+			} else {
+				audio.pause();
+			}
+		})
+		//		$('.yinyue').click(function(){
+		//			
+		//			if(audio.paused){
+		//				
+		//				audio.play();
+		//				
+		//			}else{
+		//				
+		//				audio.pause();
+		//				
+		//			}
+		//		})
 	</script>
 
 
