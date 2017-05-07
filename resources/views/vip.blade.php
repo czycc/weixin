@@ -34,7 +34,84 @@
 						<span>邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱:</span>
 						<input type="text" name="email" id="email"/>
 					</div>
-					<div class="">
+					<div class=" select">
+						<input type="text" name="province" id="province"/>
+						<span>所属省份:</span>
+						<div value="">
+							<p class="arrow"></p>
+							<span>选择省份</span>
+							<!--<p class="arrow"></p>-->
+							<ul name="province" id="province">
+								
+								<li value="">北京市</li>
+								<li value="">上海市</li>
+								<li value="">重庆市</li>
+								<li value="">河北省</li>
+								<li value="">河南省</li>
+								<li value="">云南省</li>
+								<li value="">黑龙江省</li>
+								<li value="">湖南省</li>
+								<li value="">安徽省</li>
+								<li value="">山东省</li>
+								<li value="">新疆维吾尔</li>
+								<li value="">江苏省</li>
+								<li value="">浙江省</li>
+								<li value="">江西省</li>
+								<li value="">湖北省</li>
+								<li value="">广西壮族</li>
+								<li value="">甘肃省</li>
+								<li value="">山西省</li>
+								<li value="">内蒙古</li>
+								<li value="">陕西省</li>
+								<li value="">吉林省</li>
+								<li value="">福建省</li>
+								<li value="">贵州省</li>
+								<li value="">广东省</li>
+								<li value="">青海省</li>
+								<li value="">西藏</li>
+								<li value="">四川省</li>
+								<li value="">宁夏回族</li>
+								<li value="">海南省</li>
+								<li value="">台湾省</li>
+								<li value="">香港特别行政区</li>
+								<li value="">澳门特别行政区</li>
+							</ul>
+						</div>
+					</div>
+					<div class="select ">
+						<input type="text" name="trade" id="trade"/>
+						<span>所属行业:</span>
+						<div value="">
+							<p class="arrow"></p>
+							<span>所属行业</span>
+							<ul name="trade" id="province">
+								<!--<li value="">选择行业</li>-->
+								<li value="">企业</li>
+								<li value="">公安</li>
+								<li value="">教育</li>
+								<li value="">交通</li>
+								<li value="">医疗</li>
+								<li value="">其他</li>
+							</ul>
+						</div>
+					</div>
+					<div class="select ">
+						<input type="text" name="identity" id="identity"/>
+						<span>所属身份:</span>
+						<div value="">
+							<p class="arrow"></p>
+							<span>所属身份</span>
+							<ul name="trade" id="province">
+								<li value="">ISV</li>
+								<li value="">集成商</li>
+								<li value="">渠道商</li>
+								<li value="">客户</li>
+								<li value="">媒体</li>
+								<li value="">其他</li>
+							</ul>
+						</div>
+					</div>
+					<!--<div class="">
 						<span>所属省份:</span>
 						<select name="province" id="province">
 							<option value="">选择省份</option>
@@ -98,7 +175,7 @@
 							<option value="媒体">媒体</option>
 							<option value="其他">其他</option>
 						</select>
-					</div>
+					</div>-->
 					<div  class="submit">
 						<label for="submitBtm"><img src="{{asset('img2/submit.png')}}"/></label>
 						<input id="submitBtm" type="submit" value="提交"/>
@@ -122,4 +199,17 @@
 	</body>
 	<script src="{{asset('js2/jquery-1.10.2.js')}}" type="text/javascript" charset="utf-8"></script>
 	<script src="{{asset('js2/index.js')}}" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$('.select div span').click(function(){
+			$(this).next('ul').css('display','block')
+		})
+		$('li').click(function(){
+			$(this).css('background-color','darkgrey').siblings().css('background-color','white');
+			var text = $(this).html();
+			$(this).parents('ul').prev().html(text);
+			$(this).parents('ul').css('display','none');
+			
+			$(this).parents('.select').find('input').val(text);
+		})
+	</script>
 </html>
