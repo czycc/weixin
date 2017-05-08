@@ -13,7 +13,7 @@
 			<div class="con">
 				<form action="{{url('/vip/create')}}" method="post">
 					{{ csrf_field() }}
-					<p>请您填写以下参会信息！</p>
+					<p class="title">请您填写以下参会信息！</p>
 					<div class="font">
 						<span>姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名:</span>
 						<input type="text" name="name" id="name"/>
