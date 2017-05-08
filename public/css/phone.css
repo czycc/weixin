@@ -2,8 +2,14 @@ html{
 	width: 100%;
 	height: 100%;
 	position: relative;
+	font-family: 'SourceHanSansCN-Medium.otf';
 	
 }
+@font-face { 
+  font-family: 'SourceHanSansCN-Medium.otf'; /*这里是说明调用来的字体名字*/ 
+  src: url('../face/SourceHanSansCN-Medium.otf'); /*这里是字体文件路径*/ 
+} 
+
 body{
 	width: 100%;
 	height: 100%;
@@ -111,7 +117,7 @@ form div span{
 	display: inline-block;
 	text-align: right;
 	font-size: 4vw;
-	font-weight: bold;
+	/*font-weight: bold;*/
 	color: white;
 }
 form div input,form div select{
@@ -166,17 +172,51 @@ input select{
 	right: 0;
 	bottom: 0;
 	margin: auto;
-	background-color: rgba(0,0,0,0.4);
+	background-color: rgba(0,0,0,0.7);
 }
 .page .popup .popupcontent{
-	width: 74%;
+	width: 70%;
+	/*height: 24%;*/
 	position: absolute;
+	
 	/*top: 0;*/
 	right: 0%;
 	left: 0%;
 	/*bottom: 0;*/
 	margin: auto;
-	top: 36%;
+	top: 38%;
+	/*background-color: white;*/
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+.page .popup .popupcontent .top{
+	width: 100%;
+	height: 76%;
+	border-bottom: 2px solid black;
+	text-align: center;
+	/*margin-top: 40%;*/
+	
+	/*line-height: 80%;*/
+}
+.page .popup .popupcontent .top p{
+	width: 100%;
+	padding-top: 30%;
+
+}
+.page .popup .popupcontent .abs{
+	/*position: relative;*/
+}
+.page .popup .popupcontent .abs p{
+	position: absolute;
+	width: 100%;
+	top: 25%;
+	text-align: center;
+	/*font-weight: bold;*/
+	font-size: 5vw;
+}
+.page .popup .popupcontent .abs p span{
+	margin-right: 2%;
 }
 .hidden{
 	display: none;

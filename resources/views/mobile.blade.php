@@ -125,8 +125,24 @@
 			</div>
 			<div class="popup hidden">
 				<div class="popupcontent">
-					<img src="{{asset('img/content.png')}}"/>
-					<img src="{{asset('img/closeBtm.png')}}"/>
+					<div class="abs">
+						<img src="{{asset('img/white.png')}}"/>
+						<p><span>姓名</span>为必填项</p>
+					</div>
+					<div class="okBtm">
+						<img src="{{asset('img/OK.png')}}"/>
+					</div>
+				</div>
+			</div>
+			<div class="popup hidden">
+				<div class="popupcontent">
+					<div class="abs">
+						<img src="{{asset('img/white.png')}}"/>
+						<p><span>手机号码</span>格式不对</p>
+					</div>
+					<div class="okBtm">
+						<img src="{{asset('img/OK.png')}}"/>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -141,6 +157,12 @@
 //		console.log(conHeight);
 		
 		$('.page .content').height(conHeight);
+		$('.okBtm img').on('tap',function(){
+			
+//			console.log(123);
+			
+			$(this).parents('.popup').hide();
+		})
 		
 //		$('.page .content .bg').height(conHeight);
 

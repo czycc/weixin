@@ -188,6 +188,28 @@
 			<div class="footer">
 				<img src="{{asset('img2/footer.jpg')}}" alt="">
 			</div>
+			<div class="popup hidden">
+				<div class="popupCon">
+					<div class="top">
+						<img src="{{asset('img2/shang.png')}}"/>
+						<p><span>姓名</span>为必填项</p>
+					</div>
+					<div class="btm okBtm">
+						<img src="{{asset('img2/xia.png')}}"/>
+					</div>
+				</div>
+			</div>
+			<div class="popup">
+				<div class="popupCon">
+					<div class="top">
+						<img src="{{asset('img2/shang.png')}}"/>
+						<p><span>手机号码</span>格式不对</p>
+					</div>
+					<div class="btm okBtm">
+						<img src="{{asset('img2/xia.png')}}"/>
+					</div>
+				</div>
+			</div>
 			<!--<div class="popup">
 				<div class="content">
 					<img src="img2/closeTop.png"/>
@@ -217,6 +239,11 @@
 			$(this).parents('ul').css('display','none');
 
 			$(this).parents('.select').find('input').val(text);
+		})
+		
+		$('.okBtm').click(function(){
+			
+			$(this).parents('.popup').hide();
 		})
 	</script>
 </html>
