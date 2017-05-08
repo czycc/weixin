@@ -1,24 +1,5 @@
 <!DOCTYPE html>
 <html>
-<<<<<<< HEAD
-	<head>
-		<meta charset="utf-8" />
-		<title></title>
-		<link rel="stylesheet" href="{{asset('css2/index.css')}}" />
-	</head>
-	<body>
-		<div class="all page1">
-			<div class="header">
-				<img src="{{asset('img2/header.jpg') }}"/>
-			</div>
-			<div class="con">
-				<form action="{{url('/vip/create')}}" method="post">
-					{{ csrf_field() }}
-					<p class="title">请您填写以下参会信息！</p>
-					<div class="font">
-						<span>姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名:</span>
-						<input type="text" name="name" id="name"/>
-=======
 <head>
     <meta charset="utf-8"/>
     <title></title>
@@ -32,11 +13,10 @@
     <div class="con">
         <form action="{{url('/vip/create')}}" method="post">
             {{ csrf_field() }}
-            <p>请您填写以下参会信息！</p>
+            <p class="title">请您填写以下参会信息！</p>
             <div class="font">
                 <span>姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名:</span>
                 <input type="text" name="name" id="name" value="{{ old('name') }}"/>
->>>>>>> origin/master
 
             </div>
             <div class="font">
