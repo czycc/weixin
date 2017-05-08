@@ -126,7 +126,7 @@
         </form>
     </div>
     @if($errors->any())
-        <div class="popup hidden">
+        <div class="popup">
             <div class="popupcontent">
                 <div class="abs">
                     <img src="{{asset('img/white.png')}}"/>
