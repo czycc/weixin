@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Vip;
 
+use App\Http\Requests\StoreVipRequest;
 use App\Models\Vip;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -13,14 +14,14 @@ class VipController extends Controller
         return view('vip');
     }
 
-    public function create(Request $request)
+    public function create(StoreVipRequest $request)
     {
 
         $result = Vip::create($request->all());
         return view('submitSuess', compact('result'));
     }
 
-    public function mobile(Request $request)
+    public function mobile(StoreVipRequest $request)
     {
 
         $result = Vip::create($request->all());
