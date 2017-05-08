@@ -26,6 +26,7 @@ class QuestionController extends Controller
         }
 
 //        保存信息
+        $prize = 1;
         if ($quantity == 5) {
             $rand = mt_rand(0, 100);
             if ($rand < 25) {
@@ -47,7 +48,7 @@ class QuestionController extends Controller
             $result->prize = $prize;
             $result->save();
         }
-        return view('hs/result', compact('quantity'));
+        return view('hs/result', compact('quantity', 'prize'));
     }
 
     public function draw()
