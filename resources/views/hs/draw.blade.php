@@ -9,14 +9,14 @@
             <div class="prizeText">
                 <p class="wishText">恭喜你抽中了</p>
                 @if($prize == 1)
-                <p class="giftText">安卓/IOS两用数据线</p>
-                    @elseif($prize ==2)
+                    <p class="giftText">安卓/IOS两用数据线</p>
+                @elseif($prize ==2)
                     <p class="giftText">唇彩移动电源</p>
-                    @elseif($prize==3)
+                @elseif($prize==3)
                     <p class="giftText">生活储物三件套</p>
-                    @else
+                @else
                     <p class="giftText">先知感温杯</p>
-                    @endif
+                @endif
             </div>
             <div class="award">
                 <div class="awardBg">
