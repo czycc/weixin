@@ -20,14 +20,14 @@ class QuestionController extends Controller
     {
         $user = session('wechat.oauth_user');
         $openid = Result::where('openid', $user['id'])->first();
-        if ($openid !== null) {
-//            已经答过题了
-            return view('hs/fail');
-        }
 
 //        保存信息
         $prize = 1;
         if ($quantity == 5) {
+            if ($openid !== null) {
+//            已经答过题了
+                return view('hs/fail');
+            }
             $rand = mt_rand(0, 100);
             if ($rand < 25) {
                 $prize = 1;
