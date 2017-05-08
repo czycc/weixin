@@ -10,7 +10,7 @@
 } 
 
 .all{
-	/*width: 100%;*/
+	width: 100%;
 	margin: 0px auto;
 	/*background: url(../img2/bg.jpg) no-repeat center center;*/
 	/*-webkit-background-size: 100% 100%;
@@ -74,7 +74,7 @@ form div span{
 }
 input,select{
 	display: inline-block;
-	width: 66%;
+	width: 64%;
 	height: 40px;
 	line-height: 40px;
 	font-size: 30px;
@@ -116,7 +116,7 @@ li{
 		}
 .select div{
 	display: inline-block;
-	width: 66%;
+	width: 64%;
 	height: 40px;
 	line-height: 40px;
 	font-size: 26px;

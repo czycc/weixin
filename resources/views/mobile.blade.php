@@ -138,13 +138,13 @@
 	<script type="text/javascript">
 		var conHeight = $(window).height(); //获取手机设备的高度
 
-		console.log(conHeight);
+//		console.log(conHeight);
 		
 		$('.page .content').height(conHeight);
 		
-		$('.page .content .bg').height(conHeight);
+//		$('.page .content .bg').height(conHeight);
 
-		console.log($('.page .content').height());
+//		console.log($('.page .content').height());
 
 		var audio = document.getElementById('audio');
 
