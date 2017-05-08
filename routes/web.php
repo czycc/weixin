@@ -12,8 +12,8 @@ use App\Models\Vend_user;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/test', function () {
-    return str_random(5);
+Route::get('/test/{quantity}', function ($quantity) {
+    return view('hs.result',compact('quantity'));
 });
 
 /**
@@ -42,6 +42,8 @@ Route::group(['middleware' => 'wechat.oauth', 'prefix' => 'hs'], function () {
         dd($user);
     });
 });
+
+
 
 Route::group(['namespace' => 'Vend'], function () {
     //自动贩卖机项目

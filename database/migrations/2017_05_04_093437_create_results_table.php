@@ -19,7 +19,8 @@ class CreateResultsTable extends Migration
             $table->string('nickname');
             $table->text('headimgurl');
             $table->smallInteger('quantity')->commit('答题数量');
-            $table->string('prize_code')->nullable()->commit('中奖码');
+            $table->string('prize_code')->commit('中奖码');
+            $table->smallInteger('prize');
             $table->timestamps();
         });
     }

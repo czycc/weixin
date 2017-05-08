@@ -1,12 +1,12 @@
-@extends('hs.layouts')
+@extends('hs_back.layouts')
 
 @section('content')
     <div class="page page4">
         <div class="logo">
-            <img src="{{asset('img3/logo.png')}}"/>
+            <img src="{{asset('img/p2/ptBg.png')}}"/>
         </div>
         <div class="content">
-            <img src="{{asset('img3/result.png')}}"/>
+            <img src="{{asset('img/result.png')}}"/>
         </div>
     </div>
 @endsection
@@ -14,7 +14,3 @@
 @section('script')
 
 @endsection
-
-
-
-
