@@ -23,7 +23,7 @@
                             <p onclick="clickSelect('a','{{$question->answer}}',{{$loop->index}})">
                                 A.{{$question->a}}</p>
                             <p onclick="clickSelect('b','{{$question->answer}}',{{$loop->index}})">
-                                B.{{$question->b}}</p>
+                                B.{!! $question->b !!}</p>
                             <p onclick="clickSelect('c','{{$question->answer}}',{{$loop->index}})">
                                 C.{{$question->c}}</p>
                         </div>
