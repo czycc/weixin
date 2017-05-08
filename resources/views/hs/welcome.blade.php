@@ -22,8 +22,9 @@
             <img src="{{asset('img3/begin2/question1.png')}}"/>
         </div>
         <div class="answerBtm">
-            <a href="{{ url('hs/question') }}"></a>
-            <img src="{{asset('img3/begin2/answerBrm.png')}}"/>
+            <a href="{{ url('hs/question') }}">
+                <img src="{{asset('img3/begin2/answerBrm.png')}}"/>
+            </a>
         </div>
         <div class="footer">
             <img src="{{asset('img3/begin/shop.png')}}"/>
