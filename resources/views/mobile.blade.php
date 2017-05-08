@@ -34,16 +34,16 @@
             {{ csrf_field() }}
 
             <div class="font">
-                <span>姓&nbsp;&nbsp;名:</span>
+                <span>姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名:</span>
                 <input type="text" name="name" id="name" value="{{old('name')}}"/>
 
             </div>
             <div class="font">
-                <span>单&nbsp;&nbsp;位:</span>
+                <span>单&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;位:</span>
                 <input type="text" name="company" id="company" value="{{old('company')}}"/>
             </div>
             <div class="font">
-                <span>职&nbsp;&nbsp;务:</span>
+                <span>职&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;务:</span>
                 <input type="text" name="job" id="job" value="{{old('job')}}"/>
             </div>
             <div>
@@ -51,7 +51,7 @@
                 <input type="text" name="phone" id="phone" value="{{old('phone')}}"/>
             </div>
             <div class="font">
-                <span>邮&nbsp;&nbsp;箱:</span>
+                <span>邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱:</span>
                 <input type="text" name="email" id="email" value="{{old('email')}}"/>
             </div>
             <div class="">
