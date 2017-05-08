@@ -23,12 +23,12 @@
 				<div class="logo">
 					<img src="{{asset('img/logo.png')}}" alt="" />
 				</div>
-				<audio id="audio" class="audio" autoplay="autoplay" preload loop="loop">
+				<!--<audio id="audio" class="audio" autoplay="autoplay" preload loop="loop">
 					<source src="{{asset('X-Ray Dog - Flight Of Dreams.mp3')}}"></source>
-				</audio>
-				<div class="yinyue">
+				</audio>-->
+				<!--<div class="yinyue">
 					<img id="music" src="{{asset('img/yinyue.png')}}" />
-				</div>
+				</div>-->
 				<form action="{{url('vip/mobile/create')}}" method="post">
 					{{ csrf_field() }}
 
@@ -146,58 +146,58 @@
 
 //		console.log($('.page .content').height());
 
-		var audio = document.getElementById('audio');
-
-		var music = document.getElementById('music');
-		
-
-		function audioAutoPlay(id) {
-			var audio = document.getElementById(id),
-				play = function() {
-					audio.play();
-					document.removeEventListener("touchstart", play, false);
-				};
-			audio.play();
-			document.addEventListener("WeixinJSBridgeReady", function() {
-				play();
-			}, false);
-			document.addEventListener('YixinJSBridgeReady', function() {
-				play();
-			}, false);
-			document.addEventListener("touchstart", play, false);
-		}
-		audioAutoPlay('audio');
-
-		window.onload = function() {
-			audio.play();
-			//			alert('ok')
-		}
-		music.addEventListener('touchstart', function() {
-
-			//			console.log(123);
-
-			if(audio.paused) {
-
-				audio.play();
-
-			} else {
-
-				audio.pause();
-
-			}
-		})
-
-		//		console.log(audio)
-		$('.yuinyue img').on('tap', function() {
-
-			console.log(123);
-
-			if(audio.paused) {
-				audio.play()
-			} else {
-				audio.pause();
-			}
-		})
+//		var audio = document.getElementById('audio');
+//
+//		var music = document.getElementById('music');
+//		
+//
+//		function audioAutoPlay(id) {
+//			var audio = document.getElementById(id),
+//				play = function() {
+//					audio.play();
+//					document.removeEventListener("touchstart", play, false);
+//				};
+//			audio.play();
+//			document.addEventListener("WeixinJSBridgeReady", function() {
+//				play();
+//			}, false);
+//			document.addEventListener('YixinJSBridgeReady', function() {
+//				play();
+//			}, false);
+//			document.addEventListener("touchstart", play, false);
+//		}
+//		audioAutoPlay('audio');
+//
+//		window.onload = function() {
+//			audio.play();
+//			//			alert('ok')
+//		}
+//		music.addEventListener('touchstart', function() {
+//
+//			//			console.log(123);
+//
+//			if(audio.paused) {
+//
+//				audio.play();
+//
+//			} else {
+//
+//				audio.pause();
+//
+//			}
+//		})
+//
+//		//		console.log(audio)
+//		$('.yuinyue img').on('tap', function() {
+//
+//			console.log(123);
+//
+//			if(audio.paused) {
+//				audio.play()
+//			} else {
+//				audio.pause();
+//			}
+//		})
 		//		$('.yinyue').click(function(){
 		//			
 		//			if(audio.paused){
