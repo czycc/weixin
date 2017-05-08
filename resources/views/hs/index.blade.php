@@ -74,7 +74,7 @@
 //                弹出模态框
                 document.getElementsByClassName('errPopup')[0].style.display = 'block';
 
-                document.getElementById("answer").innerHTML = answer.toLowerCase();
+                document.getElementById("answer").innerHTML = answer.toUpperCase();
                 document.getElementById('id' + index).className = 'subject hidden';
                 document.getElementById('id' + (index + 1)).className = 'subject';
             }
