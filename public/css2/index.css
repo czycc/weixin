@@ -198,15 +198,16 @@ select option{
 	/*height: 30px;
 	line-height: 30px;*/
 }
-.popup{
+.popup {
 	position: fixed;
 	z-index: 30;
 	width: 100%;
-	background-color:rgba(0,0,0,0.7);
+	background-color: rgba(0, 0, 0, 0.7);
 	top: 0px;
 	left: 0px;
 	height: 100%;
 }
+
 .popup .popupCon{
 	position: absolute;
 	width: 40%;
