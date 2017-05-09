@@ -55,6 +55,19 @@ function yinyue() {
 		document.addEventListener("touchstart", play, false);
 	}
 	audioAutoPlay('audio');
+	
+	window.onload = function(){
+		
+		document.getElementById('audio').play();
+		
+		     //一般情况下，这样就可以自动播放了，但是一些奇葩iPhone机不可以
+	     document.getElementById('audio').play();
+	    //必须在微信Weixin JSAPI的WeixinJSBridgeReady才能生效
+	    document.addEventListener("WeixinJSBridgeReady", function () {
+	        document.getElementById('audio').play();
+	//      document.getElementById('video').play();
+	    }, false);
+		}
 }
 
 
