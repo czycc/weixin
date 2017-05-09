@@ -28,9 +28,10 @@ class StoreVipRequest extends FormRequest
             'company' => 'required',
             'job' => 'required',
             'phone' => 'required|digits:11',
-            'province' => 'required',
+            'email' => 'required',
+            'identity' => 'required',
             'trade' => 'required',
-            'identity' => 'required'
+            'province' => 'required'
         ];
     }
 
@@ -42,9 +43,9 @@ class StoreVipRequest extends FormRequest
             'job.required' => '职务 不能为空',
             'phone.required' => '手机号码 不能为空',
             'phone.digits' => '手机号码 格式不正确',
-            'province.required' => '省份 不能为空',
-            'trade.required' => '行业 不能为空',
             'identity.required' => '身份 不能为空',
+            'trade.required' => '行业 不能为空',
+            'province.required' => '省份 不能为空',
         ];
     }
 }
