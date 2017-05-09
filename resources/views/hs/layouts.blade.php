@@ -18,6 +18,9 @@
 
 <body>
 @yield('content')
+	<audio id="audio" class="audio" autoplay="autoplay" preload loop="loop">
+		<source src="{{asset('yinyue.mp3')}}"></source>
+	</audio>
 
 </body>
 
