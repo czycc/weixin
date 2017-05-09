@@ -139,7 +139,7 @@ img {
 .page2 .content {
 	position: relative;
 	width: 86%;
-	height: 50%;
+	height: 52%;
 	left: 5%;
 	top: 7%;
 	/*background-color: white;*/
@@ -191,15 +191,20 @@ img {
 	top: -5%;
 }
 .page2 .subject .answer{
-	/*position: relative;*/
-	/*bottom: 5%;*/
+	position: absolute;
+	bottom: 4%;
+	width: 84%;
+	left: 0%;
+	right: 0%;
+	margin: auto;
+	
 }
 .page2 .title {
 	/*text-align: center;*/
-	font-size: 5.7vw;
+	font-size: 5vw;
 	color: #00499e;
 	line-height: 4vh;
-	/*font-family: '方正兰亭黑_GBK Regular';*/
+	font-family: '方正兰亭黑_GBK Regular';
 	font-weight: bold;
 }
 
@@ -216,10 +221,12 @@ img {
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
+	/*padding-right: 4%;*/
+	padding-right: 10px;
 
-	-webkit-box-sizing: border-box;
+	/*-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+	box-sizing: border-box;*/
 
 	
 }
