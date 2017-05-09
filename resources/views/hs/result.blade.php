@@ -153,7 +153,7 @@
                         //				alert(txt);
 //                        turnplate.bRotate = !turnplate.bRotate;
                         //切换到领奖页面(czy)
-                        $('.page7').hide().siblings().show();
+                        $('.page7').show().siblings().hide();
 
 					}
 				});
