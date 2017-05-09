@@ -207,7 +207,10 @@ img {
 	font-family: '方正兰亭黑_GBK Regular';
 	font-weight: bold;
 }
-
+.page2 .subject .tm{
+	font-size: 0.1vw;
+	font-weight: normal;
+}
 .page2 .subject p{
 	/*width: 94%;*/
 	height: 40px;
@@ -221,8 +224,8 @@ img {
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
-	/*padding-right: 4%;*/
-	padding-right: 10px;
+
+
 
 	/*-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
