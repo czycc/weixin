@@ -73,11 +73,12 @@
                 document.getElementsByClassName('errPopup')[0].style.display = 'block';
 
                 document.getElementById("answer").innerHTML = answer.toUpperCase();
-                document.getElementById('id' + index).className = 'subject hidden';
-                document.getElementById('id' + (index + 1)).className = 'subject';
                 if (index == 4) {
                     window.location.href = '{{url('hs/result')}}' + '/' + i;
                 }
+                document.getElementById('id' + index).className = 'subject hidden';
+                document.getElementById('id' + (index + 1)).className = 'subject';
+
             }
         }
         $('.subject p').click(function () {
