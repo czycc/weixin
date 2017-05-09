@@ -150,7 +150,7 @@
     //		console.log(conHeight);
 
     $('.page .content').height(conHeight);
-    $('.okBtm img').on('tap', function () {
+    $('.okBtm img').on('click', function () {
 
 //			console.log(123);
 
