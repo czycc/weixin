@@ -20,7 +20,7 @@
 //
 //})
 
-count();
+//count();
 function count(){
 	
 	$('.page0').fadeOut(5000);

@@ -155,7 +155,7 @@
 
                 ctx.textBaseline = "middle";
                 //font 属性设置或返回画布上文本内容的当前字体属性
-                ctx.font = '26px Microsoft YaHei';
+                ctx.font = '24px Microsoft YaHei';
                 for (var i = 0; i < turnplate.restaraunts.length; i++) {
                     var angle = turnplate.startAngle + i * arc;
                     ctx.fillStyle = turnplate.colors[i];
@@ -172,7 +172,7 @@
                     ctx.fillStyle = "#E29028";
                     var text = turnplate.restaraunts[i];
 
-                    var line_height = 17;
+                    var line_height = 40;
                     //translate方法重新映射画布上的 (0,0) 位置
                     ctx.translate(211 + Math.cos(angle + arc / 2) * turnplate.textRadius, 211 + Math.sin(angle + arc / 2) * turnplate.textRadius);
 
@@ -185,21 +185,21 @@
                         for (var j = 0; j < texts.length; j++) {
 //                          ctx.font = j == 0 ? 'bold 40px' : '40px';
                             if (j == 0) {
-                                ctx.fillText(texts[j] + "M", 40, j * line_height);
+                                ctx.fillText(texts[j] + "M", 40, j * line_height*2/3);
                             } else {
-                                ctx.fillText(texts[j], 40, j * line_height);
+                                ctx.fillText(texts[j], 40, j * line_height*2/3);
                             }
                         }
                     } else if (text.indexOf("M") == -1 && text.length > 6) { //奖品名称长度超过一定范围
                         text = text.substring(0, 6) + "||" + text.substring(6);
                         var texts = text.split("||");
                         for (var j = 0; j < texts.length; j++) {
-                            ctx.fillText(texts[j], 40, j * line_height);
+                            ctx.fillText(texts[j], 40, j * line_height*2/3 );
                         }
                     } else {
                         //在画布上绘制填色的文本。文本的默认颜色是黑色
                         //measureText()方法返回包含一个对象，该对象包含以像素计的指定字体宽度
-                        ctx.fillText(text, 40, 0);
+                        ctx.fillText(text, 40, 10);
                     }
                     //把当前画布返回（调整）到上一个save()状态之前
                     ctx.restore();
