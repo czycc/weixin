@@ -35,7 +35,41 @@
                 <span>邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱:</span>
                 <input type="text" name="email" id="email" value="{{old('email')}}"/>
             </div>
-            <div class=" select">
+            <div class="select">
+                <input type="text" name="identity" id="identity" value="{{old('identity')}}"/>
+                <span>所属身份:</span>
+                <div value="">
+                    <p class="arrow"></p>
+                    <span>选择身份</span>
+                    <ul>
+                        <li value="">ISV</li>
+                        <li value="">集成商</li>
+                        <li value="">渠道商</li>
+                        <li value="">客户</li>
+                        <li value="">媒体</li>
+                        <li value="">其他</li>
+                    </ul>
+                </div>
+            </div>
+ 
+            <div class="select ">
+                <input type="text" name="trade" id="trade" value="{{old('trade')}}"/>
+                <span>所属行业:</span>
+                <div value="">
+                    <p class="arrow"></p>
+                    <span>选择行业</span>
+                    <ul>
+                        <li value="">企业</li>
+                        <li value="">公安</li>
+                        <li value="">教育</li>
+                        <li value="">交通</li>
+                        <li value="">医疗</li>
+                        <li value="">其他</li>
+                    </ul>
+                </div>
+            </div>
+
+           <div class=" select">
                 <input type="text" name="province" id="province" value="{{old('province')}}"/>
                 <span>所属省份:</span>
                 <div value="">
@@ -76,38 +110,6 @@
                         <li value="">台湾省</li>
                         <li value="">香港特别行政区</li>
                         <li value="">澳门特别行政区</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="select ">
-                <input type="text" name="trade" id="trade" value="{{old('trade')}}"/>
-                <span>所属行业:</span>
-                <div value="">
-                    <p class="arrow"></p>
-                    <span>选择行业</span>
-                    <ul>
-                        <li value="">企业</li>
-                        <li value="">公安</li>
-                        <li value="">教育</li>
-                        <li value="">交通</li>
-                        <li value="">医疗</li>
-                        <li value="">其他</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="select">
-                <input type="text" name="identity" id="identity" value="{{old('identity')}}"/>
-                <span>所属身份:</span>
-                <div value="">
-                    <p class="arrow"></p>
-                    <span>选择身份</span>
-                    <ul>
-                        <li value="">ISV</li>
-                        <li value="">集成商</li>
-                        <li value="">渠道商</li>
-                        <li value="">客户</li>
-                        <li value="">媒体</li>
-                        <li value="">其他</li>
                     </ul>
                 </div>
             </div>
