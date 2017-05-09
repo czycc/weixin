@@ -82,6 +82,7 @@ input,select{
 	height: 40px;
 	line-height: 40px;
 	font-size: 30px;
+	/*margin-left: 4%;*/
 	
 }
 ul{
@@ -202,16 +203,15 @@ select option{
 	/*height: 30px;
 	line-height: 30px;*/
 }
-.popup {
+.popup{
 	position: fixed;
 	z-index: 30;
 	width: 100%;
-	background-color: rgba(0, 0, 0, 0.7);
+	background-color:rgba(0,0,0,0.7);
 	top: 0px;
 	left: 0px;
 	height: 100%;
 }
-
 .popup .popupCon{
 	position: absolute;
 	width: 40%;
@@ -330,7 +330,3 @@ form div p{
 	height: 30px;
 	line-height: 30px;
 	}
-	
-.hidden{
-	display: none;
-}
