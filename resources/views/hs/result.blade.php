@@ -16,7 +16,7 @@
                     </div>
                     <div class="banner">
                         <div class="turnplate"
-                             style="background-image:url({{asset('img3/turnplate-bg.png')}});background-size:100% 100%;">
+                             style="background-image:url({{asset('img3/rotate.png')}});background-size:100% 100%;">
                             <canvas class="item" id="wheelcanvas" width="422px" height="422px"></canvas>
                             <img class="pointer" src="{{asset('img3/turnplate-pointer.png')}}"/>
                         </div>
