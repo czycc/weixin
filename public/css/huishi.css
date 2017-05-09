@@ -429,11 +429,16 @@ img {
 	width: 100%;
 	font-size: 6vw;
 }
+.page3 .rightText .goodText{
+	color: red;
+	height: 30px;
+	line-height: 30px;
+}
 .page3 .banner {
 	display: block;
-	width: 70%;
+	width: 66%;
 	position: absolute;
-	top: 30%;
+	top: 36%;
 	left: 0;
 	right: 0;
 	margin: auto;

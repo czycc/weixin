@@ -12,6 +12,7 @@
                     <div class="rightText">
                         <p class="right">恭喜你答对了<span>5</span>题</p>
                         <p class="drawText">获得抽奖机会一次</p>
+                        <p class="goodText">礼品有限,先到先得</p>
                     </div>
                     <div class="banner">
                         <div class="turnplate"
