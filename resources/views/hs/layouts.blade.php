@@ -19,12 +19,36 @@
 <body>
 @yield('content')
 	<audio id="audio" class="audio" autoplay="autoplay" preload loop="loop">
-		<source src="{{asset('yinyue.mp3')}}"></source>
+		<source src="{{asset('yin.mp3')}}"></source>
 	</audio>
 
 </body>
 
 <script src="{{asset('js/huishi.js')}}" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+		var audio = document.getElementById('audio');
+		function audioAutoPlay(id) {
+			var audio = document.getElementById(id),
+				play = function() {
+					audio.play();
+					document.removeEventListener("touchstart", play, false);
+				};
+			audio.play();
+			document.addEventListener("WeixinJSBridgeReady", function() {
+				play();
+			}, false);
+			document.addEventListener('YixinJSBridgeReady', function() {
+				play();
+			}, false);
+			document.addEventListener("touchstart", play, false);
+		}
+		audioAutoPlay('audio');
+
+		window.onload = function() {
+			audio.play();
+			//			alert('ok')
+		}
+</script>
 
 @yield('script')
 

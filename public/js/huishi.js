@@ -6,7 +6,10 @@ function count(){
 	
 	$('.page1').fadeIn(4000);
 	
-
+	$('.page1 .answerBtm').click(function(){
+		
+		$('.page2').show().siblings().hide();
+	})
 	
 	$('.page2 .errPopup').click(function(){
 		
@@ -35,40 +38,6 @@ function count(){
 	}
 }
 
-yinyue();
-
-function yinyue() {
-
-	function audioAutoPlay(id) {
-		var audio = document.getElementById(id),
-			play = function() {
-				audio.play();
-				document.removeEventListener("touchstart", play, false);
-			};
-		audio.play();
-		document.addEventListener("WeixinJSBridgeReady", function() {
-			play();
-		}, false);
-		document.addEventListener('YixinJSBridgeReady', function() {
-			play();
-		}, false);
-		document.addEventListener("touchstart", play, false);
-	}
-	audioAutoPlay('audio');
-	
-	window.onload = function(){
-		
-		document.getElementById('audio').play();
-		
-		     //一般情况下，这样就可以自动播放了，但是一些奇葩iPhone机不可以
-	     document.getElementById('audio').play();
-	    //必须在微信Weixin JSAPI的WeixinJSBridgeReady才能生效
-	    document.addEventListener("WeixinJSBridgeReady", function () {
-	        document.getElementById('audio').play();
-	//      document.getElementById('video').play();
-	    }, false);
-		}
-}
 
 
 

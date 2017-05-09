@@ -144,8 +144,8 @@
 					duration: 8000,
 					callback: function() {
 		//											alert(txt);
-						turnplate.bRotate = !turnplate.bRotate;
-		//				$('.page3 .popup').css('display','block');
+//						turnplate.bRotate = !turnplate.bRotate;
+
 	                    $('.page3 .popup').css('display', 'block');
 
                         $('.page3 .popup .shong span').html(txt);
@@ -153,7 +153,8 @@
                         //				alert(txt);
 //                        turnplate.bRotate = !turnplate.bRotate;
                         //切换到领奖页面(czy)
-                        window.location.href='{{url('hs/draw')}}';
+                        $('.page7').hide().siblings().show();
+
 					}
 				});
 			};
