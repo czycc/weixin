@@ -13,7 +13,6 @@
 
                 {{--随机选取4道题--}}
                 @foreach($questions as $question)
-
                     <div id="id{{$loop->index}}" class="subject @if(!$loop->first) hidden @endif">
                         <span>{{$loop->index +1}}</span>
                         <div class="title">
@@ -28,7 +27,6 @@
                                 C.{!! $question->c !!}</p>
                         </div>
                     </div>
-
                 @endforeach
 
             </div>
