@@ -19,7 +19,7 @@
 <body>
 @yield('content')
 	<audio id="audio" class="audio" autoplay="autoplay" preload loop="loop">
-		<source src="{{asset('yin.mp3')}}"></source>
+		<source src="{{asset('huishi.mp3')}}"></source>
 	</audio>
 
 </body>

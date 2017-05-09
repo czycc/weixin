@@ -136,6 +136,7 @@ form div input{
 	background: url(../img/arr.png) no-repeat center center;
 	-webkit-background-size: 100% 100%;
 	background-size: 100% 100%;
+	margin-left: 2%;
 }
 form div select{
 	background: url(../img/arrow.png) no-repeat center center;
@@ -147,6 +148,7 @@ form div select{
 	/*color: #778197;*/
 	font-size: 4vw;
 	font-weight: bold;
+	margin-left: 2%;
 }
 input select{
 	color: white;

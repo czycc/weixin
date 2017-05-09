@@ -32,28 +32,55 @@
             {{ csrf_field() }}
 
             <div class="font">
-                <span>姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名:</span>
+                <span>姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名</span>
                 <input type="text" name="name" id="name" value="{{old('name')}}"/>
 
             </div>
             <div class="font">
-                <span>单&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;位:</span>
+                <span>单&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;位</span>
                 <input type="text" name="company" id="company" value="{{old('company')}}"/>
             </div>
             <div class="font">
-                <span>职&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;务:</span>
+                <span>职&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;务</span>
                 <input type="text" name="job" id="job" value="{{old('job')}}"/>
             </div>
             <div>
-                <span>手机号码:</span>
+                <span>手机号码</span>
                 <input type="text" name="phone" id="phone" value="{{old('phone')}}"/>
             </div>
             <div class="font">
-                <span>邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱:</span>
+                <span>邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱</span>
                 <input type="text" name="email" id="email" value="{{old('email')}}"/>
             </div>
-            <div class="">
-                <span>所属省份:</span>
+            <div>
+                <span>所属身份</span>
+                <select name="identity" id="identity">
+                    <option value="{{null!==old('identity')? old('identity') : ''}}">{{null!==old('identity')? old('identity') : '选择身份'}}</option>
+                    <option value="ISV">ISV</option>
+                    <option value="集成商">集成商</option>
+                    <option value="渠道商">渠道商</option>
+                    <option value="客户">客户</option>
+                    <option value="媒体">媒体</option>
+                    <option value="其他">其他</option>
+                </select>
+            </div>
+ 
+            <div>
+                <span>所属行业</span>
+                <select name="trade" id="trade">
+                    <option value="{{null!==old('trade')? old('trade') : ''}}">{{null!==old('trade')? old('trade') : '选择行业'}}</option>
+                    <option value="政务">政务</option>
+                    <option value="企业">企业</option>
+                    <option value="公安">公安</option>
+                    <option value="教育">教育</option>
+                    <option value="交通">交通</option>
+                    <option value="医疗">医疗</option>
+                    <option value="其他">其他</option>
+                </select>
+            </div>
+
+           <div class="">
+                <span>所属省份</span>
                 <select name="province" id="province">
                     <option value="{{null!==old('province')? old('province') : ''}}">{{null!==old('province')? old('province') : '选择省份'}}</option>
                     <option value="北京市">北京市</option>
@@ -90,31 +117,6 @@
                     <option value="台湾省">台湾省</option>
                     <option value="香港特别行政区">香港特别行政区</option>
                     <option value="澳门特别行政区">澳门特别行政区</option>
-                </select>
-            </div>
-            <div>
-                <span>所属行业:</span>
-                <select name="trade" id="trade">
-                    <option value="{{null!==old('trade')? old('trade') : ''}}">{{null!==old('trade')? old('trade') : '选择行业'}}</option>
-                    <option value="政务">政务</option>
-                    <option value="企业">企业</option>
-                    <option value="公安">公安</option>
-                    <option value="教育">教育</option>
-                    <option value="交通">交通</option>
-                    <option value="医疗">医疗</option>
-                    <option value="其他">其他</option>
-                </select>
-            </div>
-            <div>
-                <span>所属身份:</span>
-                <select name="identity" id="identity">
-                    <option value="{{null!==old('identity')? old('identity') : ''}}">{{null!==old('identity')? old('identity') : '选择身份'}}</option>
-                    <option value="ISV">ISV</option>
-                    <option value="集成商">集成商</option>
-                    <option value="渠道商">渠道商</option>
-                    <option value="客户">客户</option>
-                    <option value="媒体">媒体</option>
-                    <option value="其他">其他</option>
                 </select>
             </div>
             <div class="submit">
