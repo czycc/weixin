@@ -74,7 +74,7 @@
 
                 document.getElementById("answer").innerHTML = answer.toUpperCase();
                 if (index == 4) {
-                    window.location.href = '{{url('hs/result')}}' + '/' + i;
+                    setTimeout("window.location.href = '{{url('hs/result')}}' + '/' + i;", 1200)
                 }
                 document.getElementById('id' + index).className = 'subject hidden';
                 document.getElementById('id' + (index + 1)).className = 'subject';
