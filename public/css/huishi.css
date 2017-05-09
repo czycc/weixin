@@ -401,7 +401,7 @@ img {
 	right: 0%;
 	margin: auto;
 	top: 26%;
-	height: 52%;
+	height: 54%;
 	background-color: white;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
@@ -420,7 +420,7 @@ img {
 	color: red;
 }
 .page3 .rightText .right{
-	font-size: 8vw;
+	font-size: 7vw;
 }
 .page3 .rightText .drawText{
 	width: 100%;
@@ -428,9 +428,9 @@ img {
 }
 .page3 .banner {
 	display: block;
-	width: 74%;
+	width: 70%;
 	position: absolute;
-	top: 26%;
+	top: 30%;
 	left: 0;
 	right: 0;
 	margin: auto;
