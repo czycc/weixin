@@ -30,10 +30,7 @@ Route::post('/vip/mobile/create', 'Vip\\VipController@mobile');
  * 惠氏答题活动
  */
 Route::group(['middleware' => 'wechat.oauth', 'prefix' => 'hs'], function () {
-    Route::get('/welcome', function(){
-        return view('hs.welcome');
-    });
-    Route::get('/question','Hs\\QuestionController@index');
+    Route::get('/welcome','Hs\\QuestionController@index');
     Route::get('/result/{quantity}', 'Hs\\QuestionController@result');
     Route::get('/statistics','Hs\\QuestionController@statistics');
     Route::get('/draw','Hs\\QuestionController@draw');

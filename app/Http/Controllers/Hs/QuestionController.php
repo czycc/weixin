@@ -48,11 +48,12 @@ class QuestionController extends Controller
             $result->prize = $prize;
             $result->save();
         }
-        return view('hs/result', compact('quantity', 'prize'));
+        return view('hs/result', compact('quantity', 'prize', 'prize_code'));
     }
 
     public function draw()
     {
+//        因为放音乐，不需要该页面
         $user = session('wechat.oauth_user');
         $user_info = Result::where('openid', $user['id'])->first();
         $prize = $user_info->prize;
