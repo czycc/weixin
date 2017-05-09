@@ -20,7 +20,7 @@
 //
 //})
 
-//count();
+count();
 function count(){
 	
 	$('.page0').fadeOut(5000);
@@ -34,7 +34,15 @@ function count(){
 		$(this).hide();
 	})
 	
+	$('.page2 .subject .answer p').click(function(){
+		
+//		console.log(123);
+		
+		$(this).css('background-color','#d7d7d6').siblings().css('background-color','white');
+	})
+	
 }
+
 
 
 
