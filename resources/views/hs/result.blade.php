@@ -28,7 +28,7 @@
         </div>
 
         {{--显示抽奖结果--}}
-        <div class="page page7">
+        <div class="page page7 hidden">
             <div class="logo">
                 <img src="{{asset('img3/logo.png')}}"/>
             </div>
