@@ -34,7 +34,7 @@ function count(){
 		$(this).hide();
 	})
 	
-	$('.page2 .subject .answer p').click(function(){
+	$('.page2 .answer p').click(function(){
 		
 //		console.log(123);
 		

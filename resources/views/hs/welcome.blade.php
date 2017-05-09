@@ -14,7 +14,7 @@
             </div>-->
         </div>
     </div>
-    <div class="page page1 hidden" id="page1 ">
+    <div class="page1 hidden" id="page1 ">
         <div class="bg">
             <img src="{{asset('img3/bg.png')}}"/>
         </div>
