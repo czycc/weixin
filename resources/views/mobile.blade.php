@@ -21,9 +21,7 @@
         <div class="bg">
             <img src="{{asset('img/bg.png')}}"/>
         </div>
-        <div class="logo">
-            <img src="{{asset('img/logo.png')}}" alt=""/>
-        </div>
+
     <!--<audio id="audio" class="audio" autoplay="autoplay" preload loop="loop">
 					<source src="{{asset('X-Ray Dog - Flight Of Dreams.mp3')}}"></source>
 				</audio>-->
