@@ -404,7 +404,7 @@ img {
 	right: 0%;
 	margin: auto;
 	top: 26%;
-	height: 54%;
+	height: 55%;
 	background-color: white;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
@@ -414,7 +414,7 @@ img {
 	width: 100%;
 	text-align: center;
 	color: #00499d;
-	margin-top: 5%;
+	margin-top: 3%;
 	/*font-size: 4vw;*/
 }
 .page3 .rightText span{
@@ -438,7 +438,7 @@ img {
 	display: block;
 	width: 66%;
 	position: absolute;
-	top: 36%;
+	top: 34%;
 	left: 0;
 	right: 0;
 	margin: auto;
