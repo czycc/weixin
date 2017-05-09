@@ -46,6 +46,7 @@ class StoreVipRequest extends FormRequest
             'identity.required' => '身份 不能为空',
             'trade.required' => '行业 不能为空',
             'province.required' => '省份 不能为空',
+            'email.required' => '邮箱 不能为空'
         ];
     }
 }
