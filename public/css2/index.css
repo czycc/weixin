@@ -44,13 +44,13 @@
 }
 .page1 .erweima img{
 	width: 80%;
-	margin:50% 60%;
+	margin:50% 0%;
 }
 form{
 	width: 50%;
 	height: 780px;
 	/*background: white;*/
-	margin:30px 0px 0px 6%;
+	margin:30px 0px 0px 14%;
 	float: left;
 }
 form .title{
@@ -71,7 +71,7 @@ form div{
 	/*height: 5%;*/
 }
 form div .promptText{
-
+	/*width: 24%;*/
 	display: inline-block;
 	text-align: left;
 	font-size: 30px;
@@ -157,6 +157,7 @@ li{
 	width: 100%;
 	text-align: left;
 	position: relative;
+	display: block;
 	}
 .select div .arrow{
 	width: 0px;
@@ -180,6 +181,9 @@ select{
 	right: 0%;
 	margin: auto;
 	bottom: 30px;
+}
+.wen img{
+	width: 100%;
 }
 /*.font span{
 	letter-spacing: 20px;
@@ -354,7 +358,7 @@ select option{
 }
 .content .right .erweima img{
 	width: 60%;
-	margin:16% 0px 0px 35%;
+	margin:16% 0px 0px 0%;
 }
 
 form div p{
