@@ -21,7 +21,7 @@ class QuestionController extends Controller
     {
         $user = session('wechat.oauth_user');
         $openid = Result::where('openid', $user['id'])->first();
-
+//
 //        Redis::setnx('prize1',150);
 //        Redis::setnx('prize2',90);
 //        Redis::setnx('prize3',50);
@@ -35,11 +35,11 @@ class QuestionController extends Controller
                 return view('hs/fail');
             }
             $rand = mt_rand(0, 1000);
-            if ($rand < 507) {
+            if ($rand < 577) {
                 $prize = 1;
-            } elseif ($rand >= 507 && $rand < 810) {
+            } elseif ($rand >= 577 && $rand < 877) {
                 $prize = 2;
-            } elseif ($rand >= 810 && $rand < 978) {
+            } elseif ($rand >= 877 && $rand < 988) {
                 $prize = 3;
             } else {
                 $prize = 4;
