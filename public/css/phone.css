@@ -110,15 +110,31 @@ form div{
 	width: 100%;
 	margin-top: 5%;
 	height: 20%;
+	position: relative;
 	/*height: 30px;*/
 }
-form div span{
+form div .promptText{
 	width: 24%;
 	display: inline-block;
 	text-align: right;
 	font-size: 4vw;
 	/*font-weight: bold;*/
 	color: white;
+}
+form div .asterisk{
+	color: red;
+	position: absolute;
+	left: 0;
+	top: 22%;
+	/*height: 4vw;*/
+	/*line-height: 4vw;*/
+	
+}
+.messageText{
+	color: red;
+	font-size: 2vw;
+	margin-top: 3%;
+	margin-left: 5%;
 }
 form div input,form div select{
 	width: 70%;

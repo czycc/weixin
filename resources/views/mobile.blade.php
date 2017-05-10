@@ -32,28 +32,34 @@
             {{ csrf_field() }}
 
             <div class="font">
-                <span>姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名</span>
+            	<span class="asterisk">*</span>
+                <span class="promptText">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名</span>
                 <input type="text" name="name" id="name" value="{{old('name')}}"/>
 
             </div>
             <div class="font">
-                <span>单&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;位</span>
+            	<span class="asterisk">*</span>
+                <span class="promptText">单&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;位</span>
                 <input type="text" name="company" id="company" value="{{old('company')}}"/>
             </div>
             <div class="font">
-                <span>职&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;务</span>
+            	<span class="asterisk">*</span>
+                <span class="promptText">职&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;务</span>
                 <input type="text" name="job" id="job" value="{{old('job')}}"/>
             </div>
             <div>
-                <span>手机号码</span>
+            	<span class="asterisk">*</span>
+                <span class="promptText">手机号码</span>
                 <input type="text" name="phone" id="phone" value="{{old('phone')}}"/>
             </div>
             <div class="font">
-                <span>邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱</span>
+            	<span class="asterisk">*</span>
+                <span class="promptText">邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱</span>
                 <input type="text" name="email" id="email" value="{{old('email')}}"/>
             </div>
             <div>
-                <span>所属身份</span>
+                <span class="asterisk">*</span>
+				<span  class="promptText">所属身份</span>
                 <select name="identity" id="identity">
                     <option value="{{null!==old('identity')? old('identity') : ''}}">{{null!==old('identity')? old('identity') : '选择身份'}}</option>
                     <option value="ISV">ISV</option>
@@ -66,7 +72,8 @@
             </div>
  
             <div>
-                <span>所属行业</span>
+				<span class="asterisk">*</span>
+				<span  class="promptText">所属行业</span>
                 <select name="trade" id="trade">
                     <option value="{{null!==old('trade')? old('trade') : ''}}">{{null!==old('trade')? old('trade') : '选择行业'}}</option>
                     <option value="政务">政务</option>
@@ -80,7 +87,8 @@
             </div>
 
            <div class="">
-                <span>所属省份</span>
+                <span class="asterisk">*</span>
+				<span  class="promptText">所属省份</span>
                 <select name="province" id="province">
                     <option value="{{null!==old('province')? old('province') : ''}}">{{null!==old('province')? old('province') : '选择省份'}}</option>
                     <option value="北京市">北京市</option>
@@ -119,6 +127,7 @@
                     <option value="澳门特别行政区">澳门特别行政区</option>
                 </select>
             </div>
+            <p class="messageText">(带*为必填内容)</p>
             <div class="submit">
                 <label for="submitBtm"><img src="{{asset('img/tjBtm_03.png')}}"/></label>
                 <input id="submitBtm" type="submit" value="提交"/>
