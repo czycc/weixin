@@ -28,12 +28,12 @@ class QuestionController extends Controller
 //            已经答过题了
                 return view('hs/fail');
             }
-            $rand = mt_rand(0, 100);
-            if ($rand < 25) {
+            $rand = mt_rand(0, 1000);
+            if ($rand < 478) {
                 $prize = 1;
-            } elseif ($rand >= 25 && $rand < 50) {
+            } elseif ($rand >= 478 && $rand < 764) {
                 $prize = 2;
-            } elseif ($rand >= 50 && $rand < 75) {
+            } elseif ($rand >= 764 && $rand < 923) {
                 $prize = 3;
             } else {
                 $prize = 4;
