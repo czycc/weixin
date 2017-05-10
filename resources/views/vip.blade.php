@@ -37,7 +37,7 @@
             </div>
             <div class="select">
                 <input type="text" name="identity" id="identity" value="{{old('identity')}}"/>
-                <span  class="promptText"><div class="asterisk">*</div>所属身份</span>
+                <span  class="promptText"><span class="asterisk">*</span>所属身份</span>
                 <div value="">
                     <p class="arrow"></p>
                     <span>选择身份</span>
@@ -54,7 +54,7 @@
  
             <div class="select ">
                 <input type="text" name="trade" id="trade" value="{{old('trade')}}"/>
-                <span  class="promptText"><div class="asterisk">*</div>所属行业</span>
+                <span  class="promptText"><span class="asterisk">*</span>所属行业</span>
                 <div value="">
                     <p class="arrow"></p>
                     <span>选择行业</span>
@@ -71,7 +71,7 @@
 
            <div class=" select">
                 <input type="text" name="province" id="province" value="{{old('province')}}"/>
-                <span  class="promptText"><div class="asterisk">*</div>所属省份</span>
+                <span  class="promptText"><span class="asterisk">*</span>所属省份</span>
                 <div value="">
                     <p class="arrow"></p>
                     <span>选择省份</span>
