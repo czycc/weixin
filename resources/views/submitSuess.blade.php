@@ -14,7 +14,7 @@
 
 				<div class="left">
 					<div class="hea">
-						<img src="{{asset('img2/submitBg_03.png')}}" alt="">
+						<img src="{{asset('img2/suess.png')}}" alt="">
 					</div>
 					<div class="container">
 						<p class="count"><span>30</span>s后自动返回</p>
@@ -27,6 +27,9 @@
 					<div class="erweima">
 						<img src="{{asset('img2/erweima.png')}}" alt="">
 					</div>
+				</div>
+				<div class="wen">
+					<img src="{{asset('img2/wen.png')}}"/>
 				</div>
 				
 			</div>
@@ -49,13 +52,13 @@
 				$('.page2 .container .count span').html(num);
 				
 				if(num<=0){
-					window.location.href = 'http://www.dtdream.com/';
+					window.location.href = 'http://www.dtdream.com/pub/msite/2017/A-round/ ';
 					clearInterval(timer);
 				}
 			},1000)
 			
 			$('.page2 .container .return').click(function(){
-				window.location.href = 'http://www.dtdream.com/';
+				window.location.href = 'http://www.dtdream.com/pub/msite/2017/A-round/ ';
 			})
 		}
 	</script>

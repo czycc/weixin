@@ -13,31 +13,31 @@
     <div class="con">
         <form action="{{url('/vip/create')}}" method="post">
             {{ csrf_field() }}
-            <p class="title">请您填写以下参会信息！<span>(带*为必填内容)</span></p>
+            <p class="title">请您填写以下参会信息！<span>(以下均为必填项)</span></p>
             <div class="font">
-                <span  class="promptText"><div class="asterisk">*</div>姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名</span>
+                <span  class="promptText">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名</span>
                 <input type="text" name="name" id="name" value="{{ old('name') }}"/>
 
             </div>
             <div class="font">
-                <span  class="promptText"><div class="asterisk">*</div>单&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;位</span>
+                <span  class="promptText">单&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;位</span>
                 <input type="text" name="company" id="company" value="{{old('company')}}"/>
             </div>
             <div class="font">
-                <span  class="promptText"><div class="asterisk">*</div>职&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;务</span>
+                <span  class="promptText">职&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;务</span>
                 <input type="text" name="job" id="job" value="{{old('job')}}"/>
             </div>
             <div>
-                <span  class="promptText"><div class="asterisk">*</div>手机号码</span>
+                <span  class="promptText">手机号码</span>
                 <input type="text" name="phone" id="phone" value="{{old('phone')}}"/>
             </div>
             <div class="font">
-                <span  class="promptText"><div class="asterisk">*</div>邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱</span>
+                <span  class="promptText">邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱</span>
                 <input type="text" name="email" id="email" value="{{old('email')}}"/>
             </div>
             <div class="select">
                 <input type="text" name="identity" id="identity" value="{{old('identity')}}"/>
-                <span  class="promptText"><span class="asterisk">*</span>所属身份</span>
+                <span  class="promptText">所属身份</span>
                 <div value="">
                     <p class="arrow"></p>
                     <span>选择身份</span>
@@ -54,7 +54,7 @@
  
             <div class="select ">
                 <input type="text" name="trade" id="trade" value="{{old('trade')}}"/>
-                <span  class="promptText"><span class="asterisk">*</span>所属行业</span>
+                <span  class="promptText">所属行业</span>
                 <div value="">
                     <p class="arrow"></p>
                     <span>选择行业</span>
@@ -71,7 +71,7 @@
 
            <div class=" select">
                 <input type="text" name="province" id="province" value="{{old('province')}}"/>
-                <span  class="promptText"><span class="asterisk">*</span>所属省份</span>
+                <span  class="promptText">所属省份</span>
                 <div value="">
                     <p class="arrow"></p>
                     <span>选择省份</span>
