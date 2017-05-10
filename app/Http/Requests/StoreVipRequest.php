@@ -38,15 +38,15 @@ class StoreVipRequest extends FormRequest
     public function messages()
     {
         return [
-            'name.required' => '姓名 不能为空',
-            'company.required' => '单位 不能为空',
-            'job.required' => '职务 不能为空',
-            'phone.required' => '手机号码 不能为空',
+            'name.required' => '姓名 为必填项',
+            'company.required' => '单位 为必填项',
+            'job.required' => '职务 为必填项',
+            'phone.required' => '手机号码 为必填项',
             'phone.digits' => '手机号码 格式不正确',
-            'identity.required' => '身份 不能为空',
-            'trade.required' => '行业 不能为空',
-            'province.required' => '省份 不能为空',
-            'email.required' => '邮箱 不能为空'
+            'identity.required' => '身份 为必填项',
+            'trade.required' => '行业 为必填项',
+            'province.required' => '省份 为必填项',
+            'email.required' => '邮箱 为必填项'
         ];
     }
 }
