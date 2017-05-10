@@ -170,9 +170,13 @@ input select{
 	color: white;
 }
 .submit{
-	position: relative;
+	position: absolute;
 	width: 36%;
-	margin: 17% auto;
+	left: 0%;
+	right: 0%;
+	margin: auto;
+	bottom: -30%;
+	/*margin: 17% auto;*/
 }
 .submit .label{
 	width: 70%;

@@ -19,7 +19,7 @@
 <div class="page">
     <div class="content">
         <div class="bg">
-            <img src="{{asset('img/bg.png')}}"/>
+            <img src="{{asset('img/bg.jpg')}}"/>
         </div>
 
     <!--<audio id="audio" class="audio" autoplay="autoplay" preload loop="loop">
