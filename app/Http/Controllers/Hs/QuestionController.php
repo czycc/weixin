@@ -6,12 +6,13 @@ use App\Models\Question;
 use App\Models\Result;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Redis;
 
 class QuestionController extends Controller
 {
     public function index()
     {
-//      随机抽取4道问题
+//      随机抽取5道问题
         $questions = Question::all()->random(5);
         return view('hs/index', compact('questions'));
     }
@@ -21,6 +22,11 @@ class QuestionController extends Controller
         $user = session('wechat.oauth_user');
         $openid = Result::where('openid', $user['id'])->first();
 
+//        Redis::setnx('prize1',150);
+//        Redis::setnx('prize2',90);
+//        Redis::setnx('prize3',50);
+//        Redis::setnx('prize4',10);
+
 //        保存信息
         $prize = 1;
         if ($quantity == 5) {
@@ -29,11 +35,11 @@ class QuestionController extends Controller
                 return view('hs/fail');
             }
             $rand = mt_rand(0, 1000);
-            if ($rand < 478) {
+            if ($rand < 507) {
                 $prize = 1;
-            } elseif ($rand >= 478 && $rand < 764) {
+            } elseif ($rand >= 507 && $rand < 810) {
                 $prize = 2;
-            } elseif ($rand >= 764 && $rand < 923) {
+            } elseif ($rand >= 810 && $rand < 978) {
                 $prize = 3;
             } else {
                 $prize = 4;
