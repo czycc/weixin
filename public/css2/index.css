@@ -72,6 +72,7 @@ form div{
 }
 form div .promptText{
 	/*width: 24%;*/
+	width: 130px;
 	display: inline-block;
 	text-align: left;
 	font-size: 30px;
@@ -100,9 +101,13 @@ input,select{
 	height: 40px;
 	line-height: 40px;
 	font-size: 30px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 	/*margin-left: 4%;*/
 	
 }
+
 ul{
 	list-style: none;
 	width: 100%;
