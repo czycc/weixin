@@ -157,6 +157,9 @@ li{
 	border: 1px solid #AAAAAA;
 	background-color: white;
 	position: relative;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 	}
 .select div span{
 	width: 100%;
