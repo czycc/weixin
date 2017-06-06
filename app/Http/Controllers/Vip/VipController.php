@@ -11,7 +11,8 @@ class VipController extends Controller
 {
     public function index()
     {
-        return view('vip');
+//        return view('vip');
+        return '很遗憾！报名时间已截止';
     }
 
     public function create(StoreVipRequest $request)

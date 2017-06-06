@@ -22,7 +22,8 @@ Route::get('/test/{quantity}', function ($quantity) {
 Route::get('/vip','Vip\\VipController@index');
 Route::post('/vip/create','Vip\\VipController@create');
 Route::get('/vip/mobile', function (){
-    return view('mobile');
+//    return view('mobile');
+    return '很遗憾！报名时间已截止';
 });
 Route::post('/vip/mobile/create', 'Vip\\VipController@mobile');
 
