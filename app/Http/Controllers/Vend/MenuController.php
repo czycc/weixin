@@ -51,11 +51,6 @@ class MenuController extends Controller
 		                "name" => "派对活动场",
 		                "url"  => "http://qichu-crm.carnivo.cn/party.aspx"		            
 		            ],
-		            [
-		                "type" => "view",
-		                "name" => "购买任意门",
-		                "url"  => "http://shop.m.jd.com/?shopId=1000073784&resourceType=jdapp_share&resourceValue=CopyURL&utm_source=iosapp&utm_medium=appshare&utm_campaign=t_335139774&utm_term=CopyURL"		            
-		            ],
 		        ],
 		    ],
 		    [
