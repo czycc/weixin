@@ -51,6 +51,11 @@ class MenuController extends Controller
 		                "name" => "派对活动场",
 		                "url"  => "http://qichu-crm.carnivo.cn/party.aspx"		            
 		            ],
+                    [
+                        "type" => "view",
+                        "name" => "获取初生证",
+                        "url"  => "http://h5.humming-tech.com/hudong/qichu-photo-get"
+                    ],
 		        ],
 		    ],
 		    [
