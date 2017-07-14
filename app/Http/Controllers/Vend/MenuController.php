@@ -54,7 +54,7 @@ class MenuController extends Controller
                     [
                         "type" => "view",
                         "name" => "获取初生证",
-                        "url"  => "http://h5.humming-tech.com/hudong/qichu-photo-get"
+                        "url"  => "http://h5.humming-tech.com/hudong/qichu-photo-get/index.html?r_code=1"
                     ],
 		        ],
 		    ],
