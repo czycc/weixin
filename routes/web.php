@@ -46,9 +46,9 @@ Route::group(['middleware' => 'wechat.oauth', 'prefix' => 'hs'], function () {
 Route::group(['namespace' => 'Vend'], function () {
     //自动贩卖机项目
     //入口
-    Route::any('/wechat', 'WechatController@serve');
+//    Route::any('/wechat', 'WechatController@serve');
     //上传二维码图片
-    Route::get('/wechat/image', 'MaterialController@image');
+//    Route::get('/wechat/image', 'MaterialController@image');
     //自定义菜单
-    Route::get('/wechat/menu', 'MenuController@menu');
+//    Route::get('/wechat/menu', 'MenuController@menu');
 });
