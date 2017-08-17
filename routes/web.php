@@ -53,6 +53,6 @@ Route::group(['namespace' => 'Vend'], function () {
 //    Route::get('/wechat/menu', 'MenuController@menu');
 });
 
-Route::get('shop/index', function (){
+Route::get('/', function (){
     return 'coming soon';
 });
